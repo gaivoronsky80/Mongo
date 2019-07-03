@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login And Registration</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Register Here</h1>
+		<hr>
+		<form action="/registration" method="post">
+	      <div class="form-group">
+	        <label for="exampleFormControlInput1"><i>First Name</i></label>
+	        <input type="text" class="form-control" id="exampleFormControlInput1" name="first_name">
+	       	<label for="exampleFormControlInput1"><i>Last Name</i></label>
+	        <input type="text" class="form-control" id="exampleFormControlInput1" name="last_name">
+	        <label for="exampleFormControlInput1"><i>Email</i></label>
+	        <input type="text" class="form-control" id="exampleFormControlInput1" name="email">
+	        <label for="exampleFormControlInput1"><i>Password</i></label>
+	        <input type="password" class="form-control" id="exampleFormControlInput1" name="password">
+	        <label for="exampleFormControlInput1"><i>Confirm Password</i></label>
+	        <input type="password" class="form-control" id="exampleFormControlInput1" name="confirm_password">
+	        <label for="exampleFormControlInput1"><i>Birthday</i></label>
+	        <input type="date" class="form-control" id="exampleFormControlInput1" name="birthday">
+	      </div>
+	      <button type="submit" class="btn btn-outline-danger">Sign Up!</button>
+	    </form>
+		<h1 class="display-4">Login Here</h1>
+		<hr>
+	    <form action="/session" method="post">
+	      <div class="form-group">
+	        <label for="exampleFormControlInput1"><i>Email</i></label>
+	        <input type="text" class="form-control" id="exampleFormControlInput1" name="email">
+	        <label for="exampleFormControlInput1"><i>Password</i></label>
+	        <input type="password" class="form-control" id="exampleFormControlInput1" name="password">
+	      </div>
+	      <button type="submit" class="btn btn-outline-danger">Login!</button>
+	    </form>
+	</div>
+</body>
+</html>

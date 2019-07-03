@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list of the types of Chihuahua</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-4">Add a new one!</h1>
+    <form action="/dogs" method="post">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Type</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="type">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="desc"></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-danger">ADD!</button>
+    </form>
+    <a href="/"><button type="button" class="btn btn-outline-danger">GO BACK!</button></a>
+  </div>
+</body>
+</html>

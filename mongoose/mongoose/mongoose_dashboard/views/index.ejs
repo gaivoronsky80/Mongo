@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list of the types of Chihuahua</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Here is a list of the types of Chihuahua:</h1>
+		<p>Most people don’t know that there are several types of Chihuahua since they mistakenly assume that all Chihuahuas look alike. Sorting out different types of Chihuahua is easy if a person knows the physical difference between various Chihuahua types.</p>
+		<table class="table">
+	  		<thead>
+			    <tr>
+					<th scope="col">Type</th>
+					<th scope="col">Description</th>
+					<th scope="col">Action</th>
+			    </tr>
+	  		</thead>
+			<% for (let x of dogs) { %>
+	  		<tbody>
+			    <tr>
+			      <td><a href="/dogs/<%= x._id %>"><%= x.type %></a></td>
+			      <td><%= x.desc %></td>
+			      <td style="color: red"><a href="/dogs/destroy/<%= x._id %>">Delete</a></td>
+			    </tr>
+	  		</tbody>
+	  		<% } %>
+		</table>
+		<a href="/dogs/new"><button type="button" class="btn btn-outline-danger">ADD NEW!</button></a>
+	</div>
+</body>
+</html>

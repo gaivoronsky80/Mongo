@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list of the types of Chihuahua</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Here is a Chihuahua: <%= data.type %></h1>
+		<table class="table">
+	  		<thead>
+			    <tr>
+			      <th scope="col">Type</th>
+			      <th scope="col">Description</th>
+			      <th scope="col">Action</th>
+			    </tr>
+	  		</thead>
+	  		<tbody>
+			    <tr>
+			      <td><%= data.type %></td>
+			      <td><%= data.desc %></td>
+			      <td>
+			      	<a href="/dogs/edit/<%= data._id %>" style="color: green">Edit</a>
+			      	<hr>
+			      	<a href="dogs/destroy/<%= data._id %>" style="color: red"> Delete</a></td>
+			    </tr>
+	  		</tbody>
+		</table>
+		<a href="/"><button type="button" class="btn btn-outline-danger">GO BACK!</button></a>
+	</div>
+</body>
+</html>
